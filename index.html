@@ -34,6 +34,11 @@
 			  right: 20px;
 			  width: 250px;
 			}
+			#magic-hat {
+				position: inherit;
+				margin: -5px !important;
+				width: 40px;
+			}
 		</style>
 		  
 	</head>
@@ -45,7 +50,21 @@
 				<section>
 					<h3>Use of magic methods in eloquent</h3>
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Hidden Feature in Eloquent</h2>
+					<pre>
+						<code class="php5" data-trim data-line-numbers="1-3">
+							Users::whereId()->first();
+							Users::whereEmail()->first();
+							Users::whereName()->first();
+						</code>
+					</pre>
+					<ul>
+						<li>How it works?</li>
+						<li>Answer is: It's MAGIC <img id="magic-hat" src="img/magic-hat.gif"></li>
+						<li>Or here</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
