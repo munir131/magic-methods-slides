@@ -39,6 +39,20 @@
 				margin: -5px !important;
 				width: 40px;
 			}
+			.active .our-focus {
+				color: black;
+				-webkit-animation: colorchange 50s 5s 1 normal;
+			}
+			@-webkit-keyframes colorchange {
+				1% {
+					
+					color: red;
+				}
+				100% {
+					
+					color: red;
+				}
+			}
 		</style>
 		  
 	</head>
@@ -52,7 +66,7 @@
 				</section>
 				<section>
 					<h2>Hidden Feature in Eloquent</h2>
-					<pre>
+					<pre class="fragment">
 						<code class="php5" data-trim data-line-numbers="1-3">
 							Users::whereId()->first();
 							Users::whereEmail()->first();
@@ -60,10 +74,35 @@
 						</code>
 					</pre>
 					<ul>
-						<li>How it works?</li>
-						<li>Answer is: It's MAGIC <img id="magic-hat" src="img/magic-hat.gif"></li>
-						<li>Or here</li>
+						<li class="fragment">How it works?</li>
+						<li class="fragment">Answer is: It's MAGIC <img id="magic-hat" src="img/magic-hat.gif"></li>
 					</ul>
+				</section>
+				<section data-state='active'>
+					<h2>Magic Methods in PHP</h2>
+					<ul>
+						<li>__construct()</li>
+						<li>__destruct()</li>
+						<li class="our-focus">__call()</li>
+						<li class="our-focus">__callStatic()</li>
+						<li>__get()</li>
+						<li>__set()</li>
+						<li>__isset()</li>
+						<li>__unset()</li>
+					</ul>
+					<ul>
+						<li>__sleep()</li>
+						<li>__wakeup()</li>
+						<li>__toString()</li>
+						<li>__invoke()</li>
+						<li>__set_state()</li>
+						<li>__clone()</li>
+						<li>__debugInfo()</li>
+					</ul>
+				</section>
+				<section>
+					<h2>LARAVEL CODE</h2>
+					<img src="/img/carbon.svg"/>
 				</section>
 			</div>
 		</div>
