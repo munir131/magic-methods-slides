@@ -56,6 +56,10 @@
 			#querybuilder {
 				height: 450px;
 			}
+			#dynamic-where {
+				height: 250px;
+			}
+			
 			#qb-link {
 				font-size: 0.5em;
 			}
@@ -75,13 +79,7 @@
 				</section>
 				<section>
 					<h2>Hidden Feature in Eloquent</h2>
-					<pre class="fragment">
-						<code class="php5" data-trim data-line-numbers="1-3">
-							Users::whereId()->first();
-							Users::whereEmail()->first();
-							Users::whereName()->first();
-						</code>
-					</pre>
+					<img id="dynamic-where" src="/img/dynamic-where.svg"/>
 					<ul>
 						<li class="fragment">How it works?</li>
 						<li class="fragment">Answer is: It's MAGIC <img id="magic-hat" src="img/magic-hat.gif"></li>
@@ -110,11 +108,20 @@
 					</ul>
 				</section>
 				<section>
-					<h2>LARAVEL CODE</h2>
-					<p>
-						<a id="qb-link" href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Query/Builder.php#L2986">https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Query/Builder.php#L2986</a>
-					</p>
-					<img id="querybuilder" src="/img/querybuilder.svg"/>
+					<section>
+						<h2>LARAVEL 5.8 CODE</h2>
+						<p>
+							<a id="qb-link" href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Query/Builder.php#L2986">https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Query/Builder.php#L2986</a>
+						</p>
+						<img id="querybuilder" src="/img/querybuilder.svg"/>
+					</section>
+					<section>
+						<h2>LARAVEL 5.7 CODE</h2>
+						<p>
+							<a id="qb-link" href="https://github.com/laravel/framework/blob/5.7/src/Illuminate/Database/Eloquent/Builder.php#L1355">https://github.com/laravel/framework/blob/5.7/src/Illuminate/Database/Eloquent/Builder.php#L1355</a>
+						</p>
+						<img id="querybuilder" src="/img/qb-static.svg"/>
+					</section>		
 				</section>
 				<section>
 					<h2>Use case</h2>
